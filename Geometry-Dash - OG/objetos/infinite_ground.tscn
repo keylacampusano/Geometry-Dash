@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3aw4bio71doy"]
+
+[ext_resource type="Script" path="res://scripts/infinite_ground.gd" id="1_fqohs"]
+[ext_resource type="Texture2D" uid="uid://cpud2cemev7wd" path="res://imagenes/Ground- GD.png" id="2_77b74"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptsae"]
+size = Vector2(2025, 254)
+
+[node name="InfiniteGround" type="StaticBody2D"]
+script = ExtResource("1_fqohs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(15, 0)
+texture = ExtResource("2_77b74")
+region_enabled = true
+region_rect = Rect2(0, 0, 2000, 256)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ptsae")

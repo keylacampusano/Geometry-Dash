@@ -1,0 +1,137 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj3v6jbytxnl4"]
+
+[ext_resource type="PackedScene" uid="uid://d3aw4bio71doy" path="res://objetos/infinite_ground.tscn" id="2_4nk00"]
+[ext_resource type="Script" path="res://scripts/jugador.gd" id="2_iabej"]
+[ext_resource type="PackedScene" uid="uid://d3hvtp6arwahf" path="res://objetos/spike.tscn" id="3_i1ldb"]
+[ext_resource type="PackedScene" uid="uid://dcygg2c7erp56" path="res://objetos/trampolines.tscn" id="4_txn08"]
+[ext_resource type="PackedScene" uid="uid://cd0ss6d8vay36" path="res://objetos/objeto_bloque.tscn" id="5_8tpa2"]
+[ext_resource type="PackedScene" uid="uid://cw7205t6rossp" path="res://objetos/jugador.tscn" id="6_g4i2g"]
+
+[node name="Level 2" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(64, 622)
+script = ExtResource("2_iabej")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+offset = Vector2(350, 0)
+zoom = Vector2(1.2, 1.2)
+limit_left = -350
+limit_bottom = 720
+position_smoothing_enabled = true
+drag_vertical_enabled = true
+
+[node name="InfiniteGround" parent="." instance=ExtResource("2_4nk00")]
+position = Vector2(729, 491)
+
+[node name="Area2D" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(1670, 307)
+
+[node name="Area2D23" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(673, 307)
+
+[node name="Area2D22" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(799, 307)
+
+[node name="Area2D21" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(923, 309)
+
+[node name="Area2D20" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(1048, 309)
+
+[node name="trampolines2" parent="." instance=ExtResource("4_txn08")]
+position = Vector2(568, 351)
+
+[node name="Area2D2" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(1802, 309)
+
+[node name="Area2D3" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(2383, 311)
+
+[node name="Area2D4" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(2504, 311)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(2628, 334)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(3000, 333)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(3000, 268)
+
+[node name="Area2D5" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(3868, 316)
+
+[node name="Area2D6" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(3993, 316)
+
+[node name="Area2D7" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(4114, 316)
+
+[node name="Area2D8" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(4237, 316)
+
+[node name="Area2D9" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(4360, 316)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(4121, 194)
+
+[node name="trampolines" parent="." instance=ExtResource("4_txn08")]
+position = Vector2(3764, 362)
+tipo = 1
+
+[node name="Area2D10" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(5192, 310)
+
+[node name="Area2D11" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(5314, 310)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5425, 332)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5728, 333)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5729, 268)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5939, 334)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5939, 267)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(5939, 199)
+
+[node name="Area2D12" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(6038, 312)
+
+[node name="Area2D13" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(6160, 312)
+
+[node name="Area2D14" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(6279, 312)
+
+[node name="Area2D15" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(6904, 312)
+
+[node name="Area2D16" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(7026, 312)
+
+[node name="Area2D17" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(7495, 310)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("5_8tpa2")]
+position = Vector2(7861, 244)
+
+[node name="Area2D18" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(7864, 155)
+
+[node name="Area2D19" parent="." instance=ExtResource("3_i1ldb")]
+position = Vector2(8200, 295)
+
+[node name="Jugador" parent="." instance=ExtResource("6_g4i2g")]
+position = Vector2(43, 267)
